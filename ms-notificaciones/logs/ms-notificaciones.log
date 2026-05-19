@@ -1,0 +1,80 @@
+2026-05-18T23:53:50.306-04:00  INFO 17112 --- [ms-notificaciones] [main] c.p.m.MsNotificacionesApplication        : Starting MsNotificacionesApplication using Java 21.0.2 with PID 17112 (C:\Users\Administrator\Desktop\pateleria\ms-notificaciones\target\classes started by Administrator in C:\Users\Administrator\Desktop\pateleria\ms-notificaciones)
+2026-05-18T23:53:50.309-04:00 DEBUG 17112 --- [ms-notificaciones] [main] c.p.m.MsNotificacionesApplication        : Running with Spring Boot v3.4.6, Spring v6.2.7
+2026-05-18T23:53:50.310-04:00  INFO 17112 --- [ms-notificaciones] [main] c.p.m.MsNotificacionesApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-05-18T23:53:51.198-04:00  INFO 17112 --- [ms-notificaciones] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-18T23:53:51.330-04:00  INFO 17112 --- [ms-notificaciones] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122 ms. Found 1 JPA repository interface.
+2026-05-18T23:53:51.600-04:00  INFO 17112 --- [ms-notificaciones] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b35f4790-17ee-3a58-a316-9cf9721d36f9
+2026-05-18T23:53:52.024-04:00  INFO 17112 --- [ms-notificaciones] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8087 (http)
+2026-05-18T23:53:52.037-04:00  INFO 17112 --- [ms-notificaciones] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-18T23:53:52.037-04:00  INFO 17112 --- [ms-notificaciones] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-05-18T23:53:52.096-04:00  INFO 17112 --- [ms-notificaciones] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-18T23:53:52.096-04:00  INFO 17112 --- [ms-notificaciones] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1738 ms
+2026-05-18T23:53:52.247-04:00  INFO 17112 --- [ms-notificaciones] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-18T23:53:52.305-04:00  INFO 17112 --- [ms-notificaciones] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-05-18T23:53:52.339-04:00  INFO 17112 --- [ms-notificaciones] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-18T23:53:52.605-04:00  INFO 17112 --- [ms-notificaciones] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-18T23:53:52.635-04:00  INFO 17112 --- [ms-notificaciones] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-18T23:53:52.792-04:00  INFO 17112 --- [ms-notificaciones] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@df6f19b
+2026-05-18T23:53:52.795-04:00  INFO 17112 --- [ms-notificaciones] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-18T23:53:52.814-04:00  WARN 17112 --- [ms-notificaciones] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-18T23:53:52.815-04:00  WARN 17112 --- [ms-notificaciones] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-18T23:53:52.834-04:00  INFO 17112 --- [ms-notificaciones] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-18T23:53:53.542-04:00  INFO 17112 --- [ms-notificaciones] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-18T23:53:53.649-04:00  INFO 17112 --- [ms-notificaciones] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-18T23:53:54.097-04:00  INFO 17112 --- [ms-notificaciones] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-18T23:53:54.727-04:00  WARN 17112 --- [ms-notificaciones] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-18T23:53:55.127-04:00  INFO 17112 --- [ms-notificaciones] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-05-18T23:53:55.190-04:00  WARN 17112 --- [ms-notificaciones] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-18T23:53:55.216-04:00  INFO 17112 --- [ms-notificaciones] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-05-18T23:53:55.243-04:00  INFO 17112 --- [ms-notificaciones] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-05-18T23:53:55.246-04:00  INFO 17112 --- [ms-notificaciones] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-18T23:53:55.256-04:00  INFO 17112 --- [ms-notificaciones] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-18T23:53:55.257-04:00  INFO 17112 --- [ms-notificaciones] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-18T23:53:55.257-04:00  INFO 17112 --- [ms-notificaciones] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-18T23:53:55.257-04:00  INFO 17112 --- [ms-notificaciones] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-18T23:53:55.257-04:00  INFO 17112 --- [ms-notificaciones] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-18T23:53:55.257-04:00  INFO 17112 --- [ms-notificaciones] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-05-18T23:53:55.257-04:00  INFO 17112 --- [ms-notificaciones] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-18T23:53:55.604-04:00  INFO 17112 --- [ms-notificaciones] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-18T23:53:55.605-04:00  INFO 17112 --- [ms-notificaciones] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-05-18T23:53:55.607-04:00  INFO 17112 --- [ms-notificaciones] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-05-18T23:53:55.609-04:00  INFO 17112 --- [ms-notificaciones] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1779162835608 with initial instances count: 0
+2026-05-18T23:53:55.612-04:00  INFO 17112 --- [ms-notificaciones] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-NOTIFICACIONES with eureka with status UP
+2026-05-18T23:53:55.613-04:00  INFO 17112 --- [ms-notificaciones] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779162835613, current=UP, previous=STARTING]
+2026-05-18T23:53:55.615-04:00  INFO 17112 --- [ms-notificaciones] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-NOTIFICACIONES/DESKTOP-S993U2C:ms-notificaciones:8087: registering service...
+2026-05-18T23:53:55.636-04:00  INFO 17112 --- [ms-notificaciones] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8087 (http) with context path '/'
+2026-05-18T23:53:55.637-04:00  INFO 17112 --- [ms-notificaciones] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8087
+2026-05-18T23:53:55.653-04:00  INFO 17112 --- [ms-notificaciones] [main] c.p.m.MsNotificacionesApplication        : Started MsNotificacionesApplication in 5.883 seconds (process running for 6.585)
+2026-05-18T23:53:55.661-04:00  INFO 17112 --- [ms-notificaciones] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-NOTIFICACIONES/DESKTOP-S993U2C:ms-notificaciones:8087 - registration status: 204
+2026-05-18T23:54:25.613-04:00  INFO 17112 --- [ms-notificaciones] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-18T23:54:25.614-04:00  INFO 17112 --- [ms-notificaciones] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-18T23:54:25.615-04:00  INFO 17112 --- [ms-notificaciones] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-18T23:54:25.615-04:00  INFO 17112 --- [ms-notificaciones] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-18T23:54:25.615-04:00  INFO 17112 --- [ms-notificaciones] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-18T23:54:25.615-04:00  INFO 17112 --- [ms-notificaciones] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-05-18T23:54:25.615-04:00  INFO 17112 --- [ms-notificaciones] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-18T23:54:25.643-04:00  INFO 17112 --- [ms-notificaciones] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-18T23:55:08.455-04:00  INFO 17112 --- [ms-notificaciones] [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-18T23:55:08.455-04:00  INFO 17112 --- [ms-notificaciones] [http-nio-8087-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-18T23:55:08.455-04:00  INFO 17112 --- [ms-notificaciones] [http-nio-8087-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-05-18T23:55:08.471-04:00  INFO 17112 --- [ms-notificaciones] [http-nio-8087-exec-2] c.p.m.controller.NotificacionController  : GET /api/notificaciones/health
+2026-05-18T23:55:16.828-04:00  INFO 17112 --- [ms-notificaciones] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MS-NOTIFICACIONES with eureka with status DOWN
+2026-05-18T23:55:16.828-04:00  INFO 17112 --- [ms-notificaciones] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779162916828, current=DOWN, previous=UP]
+2026-05-18T23:55:16.828-04:00  INFO 17112 --- [ms-notificaciones] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-NOTIFICACIONES/DESKTOP-S993U2C:ms-notificaciones:8087: registering service...
+2026-05-18T23:55:16.843-04:00  INFO 17112 --- [ms-notificaciones] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-18T23:55:16.843-04:00  INFO 17112 --- [ms-notificaciones] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-18T23:55:16.859-04:00  INFO 17112 --- [ms-notificaciones] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-NOTIFICACIONES/DESKTOP-S993U2C:ms-notificaciones:8087 - registration status: 204
+2026-05-18T23:55:16.859-04:00  INFO 17112 --- [ms-notificaciones] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-18T23:55:16.859-04:00  INFO 17112 --- [ms-notificaciones] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-18T23:55:16.859-04:00  INFO 17112 --- [ms-notificaciones] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-18T23:55:16.859-04:00  INFO 17112 --- [ms-notificaciones] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-05-18T23:55:19.873-04:00  INFO 17112 --- [ms-notificaciones] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-05-18T23:55:19.893-04:00  INFO 17112 --- [ms-notificaciones] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-NOTIFICACIONES/DESKTOP-S993U2C:ms-notificaciones:8087 - deregister  status: 200
+2026-05-18T23:55:19.894-04:00  INFO 17112 --- [ms-notificaciones] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

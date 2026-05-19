@@ -1,0 +1,133 @@
+2026-05-19T00:00:34.325-04:00  INFO 21600 --- [ms-pagos] [main] c.p.ms_pagos.MsPagosApplication          : Starting MsPagosApplication using Java 21.0.2 with PID 21600 (C:\Users\Administrator\Desktop\pateleria\ms-pagos\target\classes started by Administrator in C:\Users\Administrator\Desktop\pateleria\ms-pagos)
+2026-05-19T00:00:34.332-04:00 DEBUG 21600 --- [ms-pagos] [main] c.p.ms_pagos.MsPagosApplication          : Running with Spring Boot v3.4.6, Spring v6.2.7
+2026-05-19T00:00:34.333-04:00  INFO 21600 --- [ms-pagos] [main] c.p.ms_pagos.MsPagosApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-05-19T00:00:35.080-04:00  INFO 21600 --- [ms-pagos] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-19T00:00:35.223-04:00  INFO 21600 --- [ms-pagos] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 1 JPA repository interface.
+2026-05-19T00:00:35.429-04:00  INFO 21600 --- [ms-pagos] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4e96e139-c1a2-30f4-a675-5e510d09d992
+2026-05-19T00:00:35.865-04:00  INFO 21600 --- [ms-pagos] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8086 (http)
+2026-05-19T00:00:35.881-04:00  INFO 21600 --- [ms-pagos] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-19T00:00:35.881-04:00  INFO 21600 --- [ms-pagos] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-05-19T00:00:35.943-04:00  INFO 21600 --- [ms-pagos] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-19T00:00:35.943-04:00  INFO 21600 --- [ms-pagos] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1564 ms
+2026-05-19T00:00:36.096-04:00  INFO 21600 --- [ms-pagos] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-19T00:00:36.152-04:00  INFO 21600 --- [ms-pagos] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-05-19T00:00:36.185-04:00  INFO 21600 --- [ms-pagos] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-19T00:00:36.445-04:00  INFO 21600 --- [ms-pagos] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-19T00:00:36.475-04:00  INFO 21600 --- [ms-pagos] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-19T00:00:36.626-04:00  INFO 21600 --- [ms-pagos] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72c704f1
+2026-05-19T00:00:36.628-04:00  INFO 21600 --- [ms-pagos] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-19T00:00:36.648-04:00  WARN 21600 --- [ms-pagos] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-19T00:00:36.650-04:00  WARN 21600 --- [ms-pagos] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-19T00:00:36.666-04:00  INFO 21600 --- [ms-pagos] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-19T00:00:37.377-04:00  INFO 21600 --- [ms-pagos] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-19T00:00:37.436-04:00  INFO 21600 --- [ms-pagos] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-19T00:00:37.443-04:00  WARN 21600 --- [ms-pagos] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pedidoClient' defined in file [C:\Users\Administrator\Desktop\pateleria\ms-pagos\target\classes\com\pasteleria\ms_pagos\cliente\PedidoClient.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.web.reactive.function.client.WebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-05-19T00:00:37.443-04:00  INFO 21600 --- [ms-pagos] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-19T00:00:37.445-04:00  INFO 21600 --- [ms-pagos] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-19T00:00:37.451-04:00  INFO 21600 --- [ms-pagos] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-19T00:00:37.453-04:00  INFO 21600 --- [ms-pagos] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-05-19T00:00:37.465-04:00  INFO 21600 --- [ms-pagos] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-19T00:00:37.484-04:00 ERROR 21600 --- [ms-pagos] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.pasteleria.ms_pagos.cliente.PedidoClient required a bean of type 'org.springframework.web.reactive.function.client.WebClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.web.reactive.function.client.WebClient' in your configuration.
+
+2026-05-19T00:08:48.201-04:00  INFO 16756 --- [ms-pagos] [main] c.p.ms_pagos.MsPagosApplication          : Starting MsPagosApplication using Java 21.0.2 with PID 16756 (C:\Users\Administrator\Desktop\pateleria\ms-pagos\target\classes started by Administrator in C:\Users\Administrator\Desktop\pateleria\ms-pagos)
+2026-05-19T00:08:48.203-04:00 DEBUG 16756 --- [ms-pagos] [main] c.p.ms_pagos.MsPagosApplication          : Running with Spring Boot v3.4.6, Spring v6.2.7
+2026-05-19T00:08:48.204-04:00  INFO 16756 --- [ms-pagos] [main] c.p.ms_pagos.MsPagosApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-05-19T00:08:48.943-04:00  INFO 16756 --- [ms-pagos] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-19T00:08:49.081-04:00  INFO 16756 --- [ms-pagos] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+2026-05-19T00:08:49.354-04:00  INFO 16756 --- [ms-pagos] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b9e75b53-789f-3c86-a4b5-1e7f30a91bb0
+2026-05-19T00:08:49.776-04:00  INFO 16756 --- [ms-pagos] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8086 (http)
+2026-05-19T00:08:49.791-04:00  INFO 16756 --- [ms-pagos] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-19T00:08:49.791-04:00  INFO 16756 --- [ms-pagos] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-05-19T00:08:49.860-04:00  INFO 16756 --- [ms-pagos] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-19T00:08:49.861-04:00  INFO 16756 --- [ms-pagos] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1603 ms
+2026-05-19T00:08:50.013-04:00  INFO 16756 --- [ms-pagos] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-19T00:08:50.068-04:00  INFO 16756 --- [ms-pagos] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-05-19T00:08:50.102-04:00  INFO 16756 --- [ms-pagos] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-19T00:08:50.376-04:00  INFO 16756 --- [ms-pagos] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-19T00:08:50.406-04:00  INFO 16756 --- [ms-pagos] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-19T00:08:50.561-04:00  INFO 16756 --- [ms-pagos] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2759749
+2026-05-19T00:08:50.564-04:00  INFO 16756 --- [ms-pagos] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-19T00:08:50.586-04:00  WARN 16756 --- [ms-pagos] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-19T00:08:50.587-04:00  WARN 16756 --- [ms-pagos] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-19T00:08:50.607-04:00  INFO 16756 --- [ms-pagos] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-19T00:08:51.478-04:00  INFO 16756 --- [ms-pagos] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-19T00:08:51.539-04:00  INFO 16756 --- [ms-pagos] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-19T00:08:51.990-04:00  INFO 16756 --- [ms-pagos] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-19T00:08:52.581-04:00  WARN 16756 --- [ms-pagos] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-19T00:08:52.954-04:00  INFO 16756 --- [ms-pagos] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-05-19T00:08:53.013-04:00  WARN 16756 --- [ms-pagos] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-19T00:08:53.041-04:00  INFO 16756 --- [ms-pagos] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-05-19T00:08:53.071-04:00  INFO 16756 --- [ms-pagos] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-05-19T00:08:53.074-04:00  INFO 16756 --- [ms-pagos] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-19T00:08:53.082-04:00  INFO 16756 --- [ms-pagos] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-19T00:08:53.083-04:00  INFO 16756 --- [ms-pagos] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-19T00:08:53.083-04:00  INFO 16756 --- [ms-pagos] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-19T00:08:53.083-04:00  INFO 16756 --- [ms-pagos] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-19T00:08:53.083-04:00  INFO 16756 --- [ms-pagos] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-19T00:08:53.083-04:00  INFO 16756 --- [ms-pagos] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-05-19T00:08:53.083-04:00  INFO 16756 --- [ms-pagos] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-19T00:08:53.422-04:00  INFO 16756 --- [ms-pagos] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-19T00:08:53.423-04:00  INFO 16756 --- [ms-pagos] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-05-19T00:08:53.424-04:00  INFO 16756 --- [ms-pagos] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-05-19T00:08:53.426-04:00  INFO 16756 --- [ms-pagos] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1779163733425 with initial instances count: 0
+2026-05-19T00:08:53.430-04:00  INFO 16756 --- [ms-pagos] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-PAGOS with eureka with status UP
+2026-05-19T00:08:53.430-04:00  INFO 16756 --- [ms-pagos] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779163733430, current=UP, previous=STARTING]
+2026-05-19T00:08:53.432-04:00  INFO 16756 --- [ms-pagos] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PAGOS/DESKTOP-S993U2C:ms-pagos:8086: registering service...
+2026-05-19T00:08:53.452-04:00  INFO 16756 --- [ms-pagos] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8086 (http) with context path '/'
+2026-05-19T00:08:53.454-04:00  INFO 16756 --- [ms-pagos] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8086
+2026-05-19T00:08:53.472-04:00  INFO 16756 --- [ms-pagos] [main] c.p.ms_pagos.MsPagosApplication          : Started MsPagosApplication in 5.769 seconds (process running for 6.404)
+2026-05-19T00:08:53.477-04:00  INFO 16756 --- [ms-pagos] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PAGOS/DESKTOP-S993U2C:ms-pagos:8086 - registration status: 204
+2026-05-19T00:09:23.426-04:00  INFO 16756 --- [ms-pagos] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-19T00:09:23.426-04:00  INFO 16756 --- [ms-pagos] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-19T00:09:23.426-04:00  INFO 16756 --- [ms-pagos] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-19T00:09:23.426-04:00  INFO 16756 --- [ms-pagos] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-19T00:09:23.426-04:00  INFO 16756 --- [ms-pagos] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-19T00:09:23.426-04:00  INFO 16756 --- [ms-pagos] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-05-19T00:09:23.426-04:00  INFO 16756 --- [ms-pagos] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-19T00:09:23.442-04:00  INFO 16756 --- [ms-pagos] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-19T00:09:51.412-04:00  INFO 16756 --- [ms-pagos] [http-nio-8086-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-19T00:09:51.412-04:00  INFO 16756 --- [ms-pagos] [http-nio-8086-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-19T00:09:51.414-04:00  INFO 16756 --- [ms-pagos] [http-nio-8086-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-05-19T00:09:51.448-04:00  INFO 16756 --- [ms-pagos] [http-nio-8086-exec-2] c.p.ms_pagos.controller.PagoController   : GET /api/pagos/health
+2026-05-19T00:10:28.067-04:00  INFO 16756 --- [ms-pagos] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MS-PAGOS with eureka with status DOWN
+2026-05-19T00:10:28.067-04:00  INFO 16756 --- [ms-pagos] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779163828067, current=DOWN, previous=UP]
+2026-05-19T00:10:28.067-04:00  INFO 16756 --- [ms-pagos] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PAGOS/DESKTOP-S993U2C:ms-pagos:8086: registering service...
+2026-05-19T00:10:28.067-04:00  INFO 16756 --- [ms-pagos] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-19T00:10:28.083-04:00  INFO 16756 --- [ms-pagos] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-19T00:10:28.083-04:00  INFO 16756 --- [ms-pagos] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PAGOS/DESKTOP-S993U2C:ms-pagos:8086 - registration status: 204
+2026-05-19T00:10:28.099-04:00  INFO 16756 --- [ms-pagos] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-19T00:10:28.099-04:00  INFO 16756 --- [ms-pagos] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-19T00:10:28.099-04:00  INFO 16756 --- [ms-pagos] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-19T00:10:28.099-04:00  INFO 16756 --- [ms-pagos] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-05-19T00:10:31.119-04:00  INFO 16756 --- [ms-pagos] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-05-19T00:10:31.137-04:00  INFO 16756 --- [ms-pagos] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-PAGOS/DESKTOP-S993U2C:ms-pagos:8086 - deregister  status: 200
+2026-05-19T00:10:31.138-04:00  INFO 16756 --- [ms-pagos] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

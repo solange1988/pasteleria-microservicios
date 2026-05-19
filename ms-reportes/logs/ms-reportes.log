@@ -1,0 +1,80 @@
+2026-05-18T23:56:23.723-04:00  INFO 22328 --- [ms-reportes] [main] c.p.ms_reportes.MsReportesApplication    : Starting MsReportesApplication using Java 21.0.2 with PID 22328 (C:\Users\Administrator\Desktop\pateleria\ms-reportes\target\classes started by Administrator in C:\Users\Administrator\Desktop\pateleria\ms-reportes)
+2026-05-18T23:56:23.726-04:00 DEBUG 22328 --- [ms-reportes] [main] c.p.ms_reportes.MsReportesApplication    : Running with Spring Boot v3.4.6, Spring v6.2.7
+2026-05-18T23:56:23.727-04:00  INFO 22328 --- [ms-reportes] [main] c.p.ms_reportes.MsReportesApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-05-18T23:56:24.604-04:00  INFO 22328 --- [ms-reportes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-18T23:56:24.740-04:00  INFO 22328 --- [ms-reportes] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+2026-05-18T23:56:25.013-04:00  INFO 22328 --- [ms-reportes] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6127c695-20c9-3928-a5c1-9daef00eff60
+2026-05-18T23:56:25.434-04:00  INFO 22328 --- [ms-reportes] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2026-05-18T23:56:25.450-04:00  INFO 22328 --- [ms-reportes] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-18T23:56:25.450-04:00  INFO 22328 --- [ms-reportes] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2026-05-18T23:56:25.513-04:00  INFO 22328 --- [ms-reportes] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-18T23:56:25.513-04:00  INFO 22328 --- [ms-reportes] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1734 ms
+2026-05-18T23:56:25.661-04:00  INFO 22328 --- [ms-reportes] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-18T23:56:25.718-04:00  INFO 22328 --- [ms-reportes] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2026-05-18T23:56:25.755-04:00  INFO 22328 --- [ms-reportes] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-18T23:56:26.031-04:00  INFO 22328 --- [ms-reportes] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-18T23:56:26.065-04:00  INFO 22328 --- [ms-reportes] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-18T23:56:26.214-04:00  INFO 22328 --- [ms-reportes] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2aa0feb2
+2026-05-18T23:56:26.216-04:00  INFO 22328 --- [ms-reportes] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-18T23:56:26.240-04:00  WARN 22328 --- [ms-reportes] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-18T23:56:26.241-04:00  WARN 22328 --- [ms-reportes] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-18T23:56:26.263-04:00  INFO 22328 --- [ms-reportes] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-18T23:56:26.992-04:00  INFO 22328 --- [ms-reportes] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-18T23:56:27.098-04:00  INFO 22328 --- [ms-reportes] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-18T23:56:27.496-04:00  INFO 22328 --- [ms-reportes] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-18T23:56:28.117-04:00  WARN 22328 --- [ms-reportes] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-18T23:56:28.503-04:00  INFO 22328 --- [ms-reportes] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-05-18T23:56:28.558-04:00  WARN 22328 --- [ms-reportes] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-18T23:56:28.583-04:00  INFO 22328 --- [ms-reportes] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-05-18T23:56:28.611-04:00  INFO 22328 --- [ms-reportes] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-05-18T23:56:28.614-04:00  INFO 22328 --- [ms-reportes] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-18T23:56:28.624-04:00  INFO 22328 --- [ms-reportes] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-18T23:56:28.624-04:00  INFO 22328 --- [ms-reportes] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-18T23:56:28.624-04:00  INFO 22328 --- [ms-reportes] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-18T23:56:28.624-04:00  INFO 22328 --- [ms-reportes] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-18T23:56:28.625-04:00  INFO 22328 --- [ms-reportes] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-18T23:56:28.625-04:00  INFO 22328 --- [ms-reportes] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-05-18T23:56:28.625-04:00  INFO 22328 --- [ms-reportes] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-18T23:56:28.984-04:00  INFO 22328 --- [ms-reportes] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-18T23:56:28.985-04:00  INFO 22328 --- [ms-reportes] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-05-18T23:56:28.987-04:00  INFO 22328 --- [ms-reportes] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-05-18T23:56:28.989-04:00  INFO 22328 --- [ms-reportes] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1779162988988 with initial instances count: 0
+2026-05-18T23:56:28.992-04:00  INFO 22328 --- [ms-reportes] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MS-REPORTES with eureka with status UP
+2026-05-18T23:56:28.993-04:00  INFO 22328 --- [ms-reportes] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779162988993, current=UP, previous=STARTING]
+2026-05-18T23:56:28.994-04:00  INFO 22328 --- [ms-reportes] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-REPORTES/DESKTOP-S993U2C:ms-reportes:8088: registering service...
+2026-05-18T23:56:29.018-04:00  INFO 22328 --- [ms-reportes] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2026-05-18T23:56:29.020-04:00  INFO 22328 --- [ms-reportes] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8088
+2026-05-18T23:56:29.039-04:00  INFO 22328 --- [ms-reportes] [main] c.p.ms_reportes.MsReportesApplication    : Started MsReportesApplication in 5.853 seconds (process running for 6.566)
+2026-05-18T23:56:29.049-04:00  INFO 22328 --- [ms-reportes] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-REPORTES/DESKTOP-S993U2C:ms-reportes:8088 - registration status: 204
+2026-05-18T23:56:58.986-04:00  INFO 22328 --- [ms-reportes] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-18T23:56:59.001-04:00  INFO 22328 --- [ms-reportes] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-18T23:56:59.002-04:00  INFO 22328 --- [ms-reportes] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-18T23:56:59.002-04:00  INFO 22328 --- [ms-reportes] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-18T23:56:59.002-04:00  INFO 22328 --- [ms-reportes] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-18T23:56:59.002-04:00  INFO 22328 --- [ms-reportes] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-05-18T23:56:59.003-04:00  INFO 22328 --- [ms-reportes] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-18T23:56:59.033-04:00  INFO 22328 --- [ms-reportes] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-18T23:57:47.362-04:00  INFO 22328 --- [ms-reportes] [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-18T23:57:47.362-04:00  INFO 22328 --- [ms-reportes] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-18T23:57:47.362-04:00  INFO 22328 --- [ms-reportes] [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-05-18T23:57:47.395-04:00  INFO 22328 --- [ms-reportes] [http-nio-8088-exec-2] c.p.m.controller.ReporteController       : GET /api/reportes/health
+2026-05-18T23:58:10.871-04:00  INFO 22328 --- [ms-reportes] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MS-REPORTES with eureka with status DOWN
+2026-05-18T23:58:10.871-04:00  INFO 22328 --- [ms-reportes] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779163090871, current=DOWN, previous=UP]
+2026-05-18T23:58:10.871-04:00  INFO 22328 --- [ms-reportes] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-REPORTES/DESKTOP-S993U2C:ms-reportes:8088: registering service...
+2026-05-18T23:58:10.871-04:00  INFO 22328 --- [ms-reportes] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-18T23:58:10.886-04:00  INFO 22328 --- [ms-reportes] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-REPORTES/DESKTOP-S993U2C:ms-reportes:8088 - registration status: 204
+2026-05-18T23:58:10.886-04:00  INFO 22328 --- [ms-reportes] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-05-18T23:58:10.902-04:00  INFO 22328 --- [ms-reportes] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-18T23:58:10.902-04:00  INFO 22328 --- [ms-reportes] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-18T23:58:10.918-04:00  INFO 22328 --- [ms-reportes] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-18T23:58:10.918-04:00  INFO 22328 --- [ms-reportes] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-05-18T23:58:13.929-04:00  INFO 22328 --- [ms-reportes] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-05-18T23:58:13.948-04:00  INFO 22328 --- [ms-reportes] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MS-REPORTES/DESKTOP-S993U2C:ms-reportes:8088 - deregister  status: 200
+2026-05-18T23:58:13.948-04:00  INFO 22328 --- [ms-reportes] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
