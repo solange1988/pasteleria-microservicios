@@ -1,0 +1,188 @@
+version: '3.8'
+
+services:
+
+  ms-eureka-server:
+    build: ./ms-eureka-server
+    container_name: ms-eureka-server
+    ports:
+      - "8761:8761"
+    networks:
+      - pasteleria-network
+
+  ms-gateway:
+    build: ./ms-gateway
+    container_name: ms-gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - ms-eureka-server
+    environment:
+      - EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE=http://ms-eureka-server:8761/eureka/
+    networks:
+      - pasteleria-network
+
+  ms-auth:
+    build: ./ms-auth
+    container_name: ms-auth
+    ports:
+      - "8090:8089"
+    depends_on:
+      - ms-eureka-server
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/pasteleria_auth?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=
+      - EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE=http://ms-eureka-server:8761/eureka/
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - pasteleria-network
+
+  ms-usuarios:
+    build: ./ms-usuarios
+    container_name: ms-usuarios
+    ports:
+      - "8092:8081"
+    depends_on:
+      - ms-eureka-server
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/pasteleria_usuarios?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=
+      - EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE=http://ms-eureka-server:8761/eureka/
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - pasteleria-network
+
+  ms-categorias:
+    build: ./ms-categorias
+    container_name: ms-categorias
+    ports:
+      - "8091:8082"
+    depends_on:
+      - ms-eureka-server
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/pasteleria_categorias?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=
+      - EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE=http://ms-eureka-server:8761/eureka/
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - pasteleria-network
+
+  ms-productos:
+    build: ./ms-productos
+    container_name: ms-productos
+    ports:
+      - "8093:8083"
+    depends_on:
+      - ms-eureka-server
+      - ms-categorias
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/pasteleria_productos?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=
+      - EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE=http://ms-eureka-server:8761/eureka/
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - pasteleria-network
+
+  ms-pedidos:
+    build: ./ms-pedidos
+    container_name: ms-pedidos
+    ports:
+      - "8094:8084"
+    depends_on:
+      - ms-eureka-server
+      - ms-usuarios
+      - ms-productos
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/pasteleria_pedidos?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=
+      - EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE=http://ms-eureka-server:8761/eureka/
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - pasteleria-network
+
+  ms-inventario:
+    build: ./ms-inventario
+    container_name: ms-inventario
+    ports:
+      - "8095:9085"
+    depends_on:
+      - ms-eureka-server
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/pasteleria_inventario?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=
+      - EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE=http://ms-eureka-server:8761/eureka/
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - pasteleria-network
+
+  ms-pagos:
+    build: ./ms-pagos
+    container_name: ms-pagos
+    ports:
+      - "8096:8086"
+    depends_on:
+      - ms-eureka-server
+      - ms-pedidos
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/pasteleria_pagos?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=
+      - EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE=http://ms-eureka-server:8761/eureka/
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - pasteleria-network
+
+  ms-notificaciones:
+    build: ./ms-notificaciones
+    container_name: ms-notificaciones
+    ports:
+      - "8097:8087"
+    depends_on:
+      - ms-eureka-server
+      - ms-usuarios
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/pasteleria_notificaciones?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=
+      - EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE=http://ms-eureka-server:8761/eureka/
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - pasteleria-network
+
+  ms-reportes:
+    build: ./ms-reportes
+    container_name: ms-reportes
+    ports:
+      - "8098:8088"
+    depends_on:
+      - ms-eureka-server
+      - ms-pedidos
+      - ms-pagos
+      - ms-productos
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/pasteleria_reportes?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=
+      - EUREKA_CLIENT_SERVICE-URL_DEFAULTZONE=http://ms-eureka-server:8761/eureka/
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - pasteleria-network
+
+networks:
+  pasteleria-network:
+    driver: bridge
