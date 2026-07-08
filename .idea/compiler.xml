@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ms-usuarios" />
+        <module name="ms-eureka-server" />
+        <module name="ms-auth" />
+        <module name="ms-notificaciones" />
+        <module name="ms-categorias" />
+        <module name="ms-reportes" />
+        <module name="ms-pedidos" />
+        <module name="ms-productos" />
+        <module name="ms-pagos" />
+        <module name="ms-inventario" />
+        <module name="ms-gateway" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ms-auth" options="-parameters" />
+      <module name="ms-categorias" options="-parameters" />
+      <module name="ms-eureka-server" options="-parameters" />
+      <module name="ms-gateway" options="-parameters" />
+      <module name="ms-inventario" options="-parameters" />
+      <module name="ms-notificaciones" options="-parameters" />
+      <module name="ms-pagos" options="-parameters" />
+      <module name="ms-pedidos" options="-parameters" />
+      <module name="ms-productos" options="-parameters" />
+      <module name="ms-reportes" options="-parameters" />
+      <module name="ms-usuarios" options="-parameters" />
+    </option>
+  </component>
+</project>

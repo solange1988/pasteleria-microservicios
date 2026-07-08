@@ -69,7 +69,7 @@ public class PedidoService {
 
         for (DetallePedidoDTO detalleDTO : dto.getDetalles()) {
 
-            // Validar que el producto existe
+
             if (!productoClient.existeProducto(
                     detalleDTO.getProductoId())) {
                 log.warn("Producto no encontrado — ID: {}",

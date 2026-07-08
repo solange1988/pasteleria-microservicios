@@ -25,20 +25,24 @@ public class AuthService {
 
     private UsuarioRepository usuarioRepository = null;
 
-    public AuthService(UsuarioRepository usuarioRepositoryusuarioRepository) {
+    public AuthService(UsuarioRepository usuarioRepository) {
         this.usuarioRepository = usuarioRepository;
     }
+
 
     public AuthResponseDTO registrar(RegisterRequestDTO dto) {
         log.info("Iniciando registro para email: {}", dto.getEmail());
 
-       
+
+
+
         if (usuarioRepository.existsByEmail(dto.getEmail())) {
             log.warn("Registro rechazado — email ya existe: {}", dto.getEmail());
             throw new EmailDuplicadoException(
                     "El email '" + dto.getEmail() + "' ya está registrado en el sistema"
             );
         }
+
 
 
         Rol rol;
